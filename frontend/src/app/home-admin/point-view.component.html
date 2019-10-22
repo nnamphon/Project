@@ -1,0 +1,33 @@
+<mat-toolbar class ="top" color="primary">
+    <mat-toolbar-row>
+        <div class="button" color="accent">
+            <button mat-button  routerLink="/home/admin">
+              <img class="world" height="25" src="assets/img/brand/BoschLogoNoBackground.png" >
+            </button>
+            
+
+            <a mat-button [routerLink]="'/add-mold'"> MOLD </a>
+            <a mat-button [routerLink]="'/add-responsible'"> RESPONSIBLE </a>
+            <a mat-button [routerLink]="'/add-location'"> LOCATION </a>
+            <a mat-button [routerLink]="'/show-location'"> SHOW </a>
+        </div>
+
+      <span class="example-spacer"></span>
+      <button mat-button [matMenuTriggerFor]="menu">{{staffs[i+0].staffName}}</button>
+      <mat-menu #menu="matMenu">
+        <a mat-menu-item  href="" mat-menu-item>Logout</a>
+        <a mat-menu-item [routerLink]="'/home'">Home</a>
+      </mat-menu>
+      
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <div class="centered"><img class="world" height="355" src="assets/img/2.png"></div>
+  <!-- <img   src="assets/img/Capture.PNG" > -->
+
+<div class="bottom">
+<h1 >WELCOME TO</h1>
+<h1  >TEF9 TOOL SHOP MAINTENANCE</h1>
+</div>
+
+
+

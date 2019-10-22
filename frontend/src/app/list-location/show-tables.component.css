@@ -1,0 +1,73 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.button-row button,
+.button-row a {
+  margin-right: 10px;
+}
+
+th,tr.mat-footer-row {
+  font-weight: bold;
+  background: rgba(24, 3, 3, 0.651);
+  text-align: center;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.Title{
+  color: saddlebrown;
+}
+.button-row {
+  margin-bottom: 5%;
+}
+.top{
+  color: aliceblue;
+  font-size: 250%;
+  /* background-color: rgb(250, 0, 0); */
+}
+/*
+container เป็นกล่องใบที่สองของเรา
+ที่จะวางตัวจากบนลงล่าง
+*/
+.container {
+display: flex;
+/* อีลีเมนต์ต่างๆในกล่องนี้จะมีทิศทางเดียว คือจากบนลงล่าง */
+flex-direction: column;
+color: #FFF;
+/* font-weight: bold; */
+text-align: center;
+
+}
+
+.header, .sidebar, .main, .footer {
+padding: 5px;
+}
+
+.content {
+display: flex;
+/* 
+  ในขณะที่ Sidebar และ Main ที่อยู่ในกล่องใบที่สองนี้
+  จะมีทิศทางจากซ้ายไปขวา
+*/
+flex-direction: row;
+}
+
+
+.main { 
+background: rgb(192, 192, 192); 
+flex: 4;
+}
+
+.sidebar { 
+background: rgb(224, 224, 224); 
+flex: 2.5;
+}
+.world3{
+ 
+width:100%;
+}

@@ -1,0 +1,32 @@
+table {
+    width: 75%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  
+  .button-row button,
+  .button-row a {
+    margin-right: 10px;
+  }
+  
+  th,tr.mat-footer-row {
+    font-weight: bold;
+    background: rgba(24, 3, 3, 0.651);
+    text-align: center;
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .Title{
+    color: saddlebrown;
+  }
+  .button-row {
+    margin-bottom: 5%;
+  }
+  .top{
+    color: aliceblue;
+    font-size: 250%;
+    /* background-color: rgb(250, 0, 0); */
+  }

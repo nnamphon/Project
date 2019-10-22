@@ -1,0 +1,40 @@
+.example-full-width {
+    align-content: center;
+    text-align: center;
+    width: 20%;
+    left : 10%;
+  }
+  .example-full-widtha {
+    align-content: center;
+    text-align: center;
+    width: 20%;
+    left : 40%;
+  }
+  
+  .example-mid-width {
+    align-content: center;
+    text-align: center;
+    width: 15%;
+    
+  }
+  .aa{
+    text-align: center;
+  }
+.example-spacer {
+  flex: 1 1 auto;
+}
+.top{
+  color: aliceblue;
+  font-size: 250%;
+ 
+}
+.Title{
+  color: saddlebrown;
+}
+th,tr.mat-footer-row {
+  font-weight: bold;
+  background: rgba(24, 3, 3, 0.651);
+  text-align: center;
+}
+
+  

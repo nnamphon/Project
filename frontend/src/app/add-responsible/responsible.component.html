@@ -1,0 +1,69 @@
+<mat-toolbar class ="top" color="primary">
+    <mat-toolbar-row>
+        <div class="button" color="accent">
+            <button mat-button  routerLink="/home/admin">
+              <img class="world" height="25" src="assets/img/brand/BoschLogoNoBackground.png" >
+            </button>
+            <button mat-icon-button>
+              <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+            </button>
+          </div>
+      <span class="example-spacer"></span>
+        <div class="buttonLogIn">
+            <button mat-button color="accent" routerLink="/list-responsible" >
+                SHOW RESPONSIBLE
+            </button>
+        </div>
+      <a mat-button [routerLink]="['/home/admin']"><i class="material-icons"> home </i></a>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-sidenav-container>
+      <mat-sidenav #sidenav  mode="side">
+        <mat-nav-list>
+    
+          <a mat-list-item [routerLink]="'/add-location'"> Location </a>
+          <a mat-list-item [routerLink]="'/add-mold'"> Mold </a>
+          <a mat-list-item [routerLink]="'/layout'"> layout </a>
+          <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+    
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <div>
+<div class = "Title">
+  <h1 style="text-align:center;"> REGISTER RESPONSIBLE </h1>
+</div>
+
+<div class="member">
+  <form class="name" style="text-align:center;">
+
+    
+
+    <h4>FIRST NAME : &nbsp;&nbsp; <mat-form-field class="example-full-width">
+      <input matInput placeholder="Input first-name" [(ngModel)]="addresponsible.inputFName"
+             type = "text" [ngModelOptions]="{standalone: true}">
+    </mat-form-field></h4>
+
+    <h4>LAST NAME : &nbsp;&nbsp; <mat-form-field class="example-full-width">
+      <input matInput placeholder="Input last-name" [(ngModel)]="addresponsible.inputLName"
+             type = "text" [ngModelOptions]="{standalone: true}">
+    </mat-form-field></h4>
+
+    <h4>NOTE : &nbsp;&nbsp; <mat-form-field class="example-full-width">
+      <input matInput placeholder="Input note" [(ngModel)]="addresponsible.inputOther"
+             type = "text" [ngModelOptions]="{standalone: true}">
+    </mat-form-field></h4>
+
+  
+
+
+    <br>
+    <div class ="button-row">
+      <a mat-raised-button color ="warn" (click)= "save()" >save</a>
+    </div>
+  </form>
+</div>
+</div>
+</mat-sidenav-content>
+</mat-sidenav-container>
